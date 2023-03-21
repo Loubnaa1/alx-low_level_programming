@@ -6,13 +6,13 @@
  */
 int main(void)
 {
-        int i;
-        char base_16[] = "0123456789abcdef";
+	int i;
+	char base_16[] = "0123456789abcdef";
 
-        for (i = 0; i < 16; i++)
-        {
-                putchar(base_16[i]);
-        }
-        putchar('\n');
-        return (0);
+	for (i = 0; i < 16; i++)
+	{
+		putchar(base_16[i]);
+	}
+	putchar('\n');
+	return (0);
 }
