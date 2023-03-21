@@ -10,8 +10,8 @@
 /* betty style doc for function main goes there */
 int main(void)
 {
-        int n;
-        int last_dig;
+	int n;
+	int last_dig;
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
