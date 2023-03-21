@@ -6,15 +6,15 @@
  */
 int main(void)
 {
-        int i;
-        int j;
+	int i;
+	int j;
 
-        i = '0';
-        for (j = 0; j < 10; j++)
-        {
-                putchar(i);
-                i++;
-        }
-        putchar('\n');
-        return (0);
+	i = '0';
+	for (j = 0; j < 10; j++)
+	{
+		putchar(i);
+		i++;
+	}
+	putchar('\n');
+	return (0);
 }

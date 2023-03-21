@@ -6,18 +6,18 @@
  */
 int main(void)
 {
-        int i;
-        char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
-        char ALPHABET[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+	int i;
+	char alphabet[] = "abcdefghijklmnopqrstuvwxyz";
+	char ALPHABET[] = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
-        for (i = 0; i < 26; i++)
-        {
-                putchar(alphabet[i]);
-        }
-        for (i = 0; i < 26; i++)
-        {
-                putchar(ALPHABET[i]);
-        }
-        putchar('\n');
-        return (0);
+	for (i = 0; i < 26; i++)
+	{
+		putchar(alphabet[i]);
+	}
+	for (i = 0; i < 26; i++)
+	{
+		putchar(ALPHABET[i]);
+	}
+	putchar('\n');
+	return (0);
 }
