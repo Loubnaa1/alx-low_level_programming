@@ -1,15 +1,23 @@
 #include "main.h"
+
 /**
- * main - check the code.
- *
- * Return: Always 0.
+ * main - Entry point, Priting _putchar
+ * Return: 0
  */
 int main(void)
 {
-        char Array[] = "_putchar";
-                for (int i = 0; i < sizeof(Array)-1; i++)
-                {
-                        _putchar(char Array[i]);
-                        _putchar('\n');
-                }
+	int i;
+	char array[] = "_putchar";
+
+	for (i = 0; i < 10; i++)
+	{
+		if (array[i] == '\0')
+		{
+			_putchar('\n');
+			break;
+		}
+		else
+			_putchar(array[i]);
+	}
+return (0);
 }
