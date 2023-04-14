@@ -1,8 +1,8 @@
 #include <stdlib.h>
 #include "main.h"
 
-/** 
-:x
+/**
+ * *array_range - function that creates an array of integers
  * @min: first value of the array
  * @max: last value of the array
  *
