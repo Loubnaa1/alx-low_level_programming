@@ -186,7 +186,7 @@ void handle_abi(unsigned char *e_ident)
 }
 
 /**
- * print_type - function printing the type of an ELF header.
+ * handle_type - function printing the type of an ELF header.
  * @e_type: The ELF type.
  * @e_ident: A pointer to an array.
  */
