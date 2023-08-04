@@ -20,7 +20,7 @@ void print_binary(unsigned long int n)
 		variable = variable >> 1;
 		i++;
 	}
-	j=i-1;
+	j = i - 1;
 	while (j >= 0)
 	{
 		if ((n >> j) & 1)
