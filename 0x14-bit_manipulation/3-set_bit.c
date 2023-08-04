@@ -2,9 +2,11 @@
 #include <stdio.h>
 /**
  * set_bit - Sets the value of a bit to 1 at a given index
- * @n: unsigned long int number
- * @index: index
- * Return: 1 on  working, or -1 if an error occurred
+ * @n: Pointer to an unsigned long int number.
+ * @index: Index of the bit to set (0-based,
+ * where 0 is the least significant bit).
+ * Return: 1 on success, or -1
+ * if an error occurred (invalid index or NULL pointer).
  */
 int set_bit(unsigned long int *n, unsigned int index)
 {
