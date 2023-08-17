@@ -1,5 +1,4 @@
 #include "lists.h"
-
 /**
  * get_dnodeint_at_index - returns node.
  * @head: pointer to head node.
@@ -12,11 +11,11 @@ dlistint_t *get_dnodeint_at_index(dlistint_t *head, unsigned int index)
 	dlistint_t *h = head;
 	unsigned int i = 0;
 
-	while (list)
+	while (h)
 	{
 		if (i == index)
 			return (h);
-		list = list->next;
+		h = h->next;
 		i++;
 	}
 	return (NULL);
