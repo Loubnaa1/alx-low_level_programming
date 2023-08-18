@@ -1,42 +1,40 @@
 #include "lists.h"
 /**
- * insert_dnodeint_at_index - function that inserts a new node at
- * a given position
- * @h: pointer to structure pointer
- * @idx : index where the new node should be added
- * @n: data
- * Return: new node or NULL if it failed
+ * insert_dnodeint_at_index - function that inserts
+ * a node at a given index.
+ * @h: pointer to  pointer.
+ * @idx : index where to insert.
+ * @n: value of inserted node.
+ * Return: new node or NULL if failed.
  */
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
 	unsigned int i = 1;
-	dlistint_t *tracker = *h;
-	dlistint_t *new_n = NULL;
+	dlistint_t *previous = *h;
+	dlistint_t *new = NULL;
 
 	if (idx == 0)
 		return (add_dnodeint(h, n));
-	tracker = tracker->next;
-	while (tracker != NULL)
+	previous = previous->next;
+	for (i = 0; previous != NULL; i++, previous = previous->next)
 	{
 		if (idx == i)
 		{
-			new_n = malloc(sizeof(dlistint_t));
-			if (new_n == NULL)
+			new = malloc(sizeof(dlistint_t));
+			if (new == NULL)
 				return (NULL);
-			new_n->next = tracker;
-			new_n->n = n;
-			new_n->prev = tracker->prev;
-			tracker->prev->next = new_n;
-			tracker->prev = new_n;
-			return (new_n);
+			new->next = previous;
+			new->n = n;
+			new->prev = previous->prev;
+			previous->prev->next = new;
+			previous->prev = new;
+			return (new);
 		}
-		i++;
-		tracker = tracker->next;
 	}
 	if (idx == i)
 	{
 		return (add_dnodeint_end(h, n));
 	}
-	free(new_n);
+	free(new);
 	return (NULL);
 }
