@@ -24,6 +24,6 @@ int _atoi(char *str)
 	}
 
 	result = num * negative;
-	return result;
+	return (result);
 }
 
