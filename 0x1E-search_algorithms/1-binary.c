@@ -12,7 +12,9 @@
 
 int binary_search(int *array, size_t size, int value)
 {
+
 	int link = 0, recht = (int)size - 1, middle, i;
+
 	if (!array)
 		return (-1);
 	for (; link <= recht;)
@@ -26,7 +28,6 @@ int binary_search(int *array, size_t size, int value)
 				printf(", ");
 		}
 		printf("\n");
-		
 		if (array[middle] == value)
 			return (middle);
 		else if (array[middle] < value)
