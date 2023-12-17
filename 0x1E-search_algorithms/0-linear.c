@@ -5,7 +5,7 @@
  * an array of integers using the Linear search algorithm
  * @array: pointer to first element
  * @size: size of elements of the array
- * @value: value to search 
+ * @value: value to search
  * Return: first value located or -1
  */
 int linear_search(int *array, size_t size, int value)
